@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle, #000000, #111111);
+  color: #00ffcc;
+  overflow-x: hidden;
+}
+.glass {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.3);
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid #00ffcc;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00ffcc;
+}
+nav a:hover {
+  color: #ff0044;
+  text-shadow: 0 0 8px #ff0044;
+}
+.section {
+  display: none;
+  padding: 30px;
+}
+.active {
+  display: block;
+}
+#shrimpGame {
+  text-align: center;
+}
+.shrimp-button {
+  background: radial-gradient(circle, #00ffcc 0%, #003322 100%);
+  border: none;
+  padding: 20px 40px;
+  font-size: 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: black;
+  text-shadow: 0 0 3px #00ffcc;
+  box-shadow: 0 0 25px #00ffcc;
+  transition: all 0.2s ease-in-out;
+}
+.shrimp-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px #ff0044;
+}
+.market-stats {
+  margin-top: 20px;
+  font-family: monospace;
+  color: #ff0044;
+  text-shadow: 0 0 5px #ff0044;
+}
+.upgrade {
+  margin-top: 20px;
+  background: rgba(0,0,0,0.5);
+  padding: 15px;
+  border-radius: 10px;
+  color: #00ffcc;
+  text-align: left;
+}
+.upgrade button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: none;
+  background: #00ffcc;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+canvas {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
